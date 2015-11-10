@@ -1,0 +1,49 @@
+body{
+  font-family: "microsoft yahei";
+}
+
+/********************
+  nav
+*******************/
+
+.swiper-container{
+  height:500px;
+}
+
+/*34 * 16 = 554*/
+@media (min-width: 34em) {
+}
+
+/*48 * 16 = 768 ipad width*/ 
+@media (min-width: 48em) {
+}
+/*62 * 16 = 992*/
+@media (min-width: 62em) {
+  /***nav***/
+  nav .nav{
+    display: block;
+  }
+  nav .nav li{
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+/*75 * 16 = 1200*/
+@media (min-width: 75em) {
+}
+
+
+@media (max-width: 33.9em) {  }
+@media (max-width: 47.9em) {
+
+}
+
+@media (max-width: 61.9em) { 
+  nav .nav{
+    width: 100%;
+  }
+  nav .nav li{
+    
+  }
+}
+@media (max-width: 74.9em) {  }
