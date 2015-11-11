@@ -21,6 +21,14 @@ body{
 }
 .navbar-toggler{
   color: #fff;
+  display: block;
+}
+.icon-bar{
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  width: 22px;
+  margin-top: 5px;
 }
 .navbar-brand img{
   width: 50px;
