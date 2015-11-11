@@ -112,7 +112,10 @@ body{
 .page-footer{
   padding: 100px 0;
 }
-.jiathis{
+.page-footer .row > div{
+  padding-bottom: 50px;
+}
+.jt-wraper{
   overflow: hidden;
   padding: 20px 0;
 }
