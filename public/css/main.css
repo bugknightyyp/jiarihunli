@@ -27,7 +27,7 @@ body{
 }
 /*swiper*/
 .swiper-container{
-  height:500px;
+  height:800px;
   cursor: url(/stuff/grab.png) 8 8, move;
 }
 

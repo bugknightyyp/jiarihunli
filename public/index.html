@@ -40,7 +40,7 @@
 
   <div class="container-flux">
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container" id="swiper-container">
 
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background:url(/img/banner1.png) no-repeat center center;   background-size: cover;">
@@ -76,6 +76,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
+    <script type="text/javascript">
+      document.getElementById('swiper-container').style.height = document.documentElement.clientHeight + 'px';
+    </script>
   </div>
   <section class="cases">
     <div class="container">
@@ -180,9 +183,7 @@
     </div>
   </footer>
 <script type="text/javascript"> 
-  $(function() {
-    $('.swiper-container').height(document.documentElement.clientHeight);
-  }) 
+  
 
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
