@@ -1,22 +1,24 @@
-<html>
+<!DOCTYPE html>
 <head>
   <title>假日婚礼</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link rel="stylesheet" type="text/css" href="/Swiper/dist/css/swiper.css">
+  <link rel="stylesheet" type="text/css" href="/animate.css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+
   <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.js"></script>
   <script type="text/javascript" src="/Swiper/dist/js/swiper.js"></script>
 </head>
 <body>
-  <header>
+  <header class="header-nav">
      <div class="container">
        <div class="row">
-         <nav class="navbar navbar-light bg-success">
-                <a class="navbar-brand" href="#"><img src="/logo.png" width="60px"></a>
+         <nav class="navbar">
+                <a class="navbar-brand" href="http://www.jiarihunli.com"><img src="/logo.png" width="120px"></a>
                 <button class="navbar-toggler hidden-lg-up pull-right" type="button" data-toggle="collapse" data-target="#nav-list">
                    &#9776;
                 </button>
@@ -36,45 +38,163 @@
      </div>
   </header>
 
-  <div class="container">
-    <!-- Slider main container -->
+  <div class="container-flux">
+    <!-- Swiper -->
     <div class="swiper-container">
-        <!-- Additional required wrapper -->
+
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img data-src="http://127.0.0.1:8000/img/main.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader"></div>
+            <div class="swiper-slide" style="background:url(/img/banner1.png) no-repeat center center;   background-size: cover;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-offset-2 col-xs-6"><span data-animation-name="bounce">假日婚礼</span></div>
+                  <div class="col-xs-offset-3 col-xs-6"><span  data-animation-name="bounceInLeft" style="animation-delay: 500ms;">您的婚礼尊享专家</span></div>
+                </div>  
+              </div>
+            </div>
+            <div class="swiper-slide" style="background:url(/img/banner.png) no-repeat center center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-offset-2 col-xs-6"><span  data-animation-name="swing">假日婚礼</span></div>
+                  <div class="col-xs-offset-3 col-xs-6"><span  data-animation-name="fadeInLeft" style="animation-delay: 500ms;">带你您的不仅是专业</span></div>
+                  <div class="col-xs-offset-4 col-xs-6"><span data-animation-name="bounceInUp" style="animation-delay: 1s;">更是放心</span></div>
+                </div>  
+              </div>
+            </div>
+            <div class="swiper-slide" style="background:url(/img/banner.png) no-repeat center center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-offset-2 col-xs-6"><span data-animation-name="rubberBand">假日婚礼</span></div>
+                  <div class="col-xs-offset-3 col-xs-6"><span data-animation-name="flipInX" style="animation-delay: 500ms;">与您相约</span></div>
+                </div>  
+              </div>
             </div>
         </div>
-
-        <!-- If we need pagination -->
+        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-        
+
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
   </div>
-<script type="text/javascript">     
+  <section class="cases">
+    <div class="container">
+
+      <h4>经典案例 <a href="#" class="pull-right">more&gt;&gt;</a></h4>
+      <div class="row">
+
+        <div class="col-sm-4">
+          <a href="#" class="media">
+            <div class="media-left">
+               <div class="img-wrap">
+                  <img class="media-object" src="img/jh.png" height="150px">
+                  <div class="img-overlay"> <span class="btn  btn-primary  animated fadeInUp " href="/about/" rel="bookmark">查看</span> </div>
+                </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading">"蓝色星空"</h5>
+              <p class="hidden-sm">该婚礼高端的不行，你不行用都不行</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="#" class="media">
+            <div class="media-left">
+               <div class="img-wrap">
+                  <img class="media-object" src="img/jh.png" height="150px">
+                  <div class="img-overlay"> <span class="btn  btn-primary  animated fadeInUp " href="/about/" rel="bookmark">查看</span> </div>
+                </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading">"蓝色星空"</h5>
+              <p class="hidden-sm">该婚礼高端的不行，你不行用都不行</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="#" class="media">
+            <div class="media-left">
+               <div class="img-wrap">
+                  <img class="media-object" src="img/jh.png" height="150px">
+                  <div class="img-overlay"> <span class="btn  btn-primary  animated fadeInUp " href="/about/" rel="bookmark">查看</span> </div>
+                </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading">"蓝色星空"</h5>
+              <p class="hidden-sm">该婚礼高端的不行，你不行用都不行</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+  </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="media">
+            <div class="media-left"><p class="no-wrap">微信扫一扫：</p></div>
+            <div class="media-body"><img src="/qr.png" width="100px"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="jiathis"><div class="jiathis_style_m"></div></div>
+        </div>
+        <div class="col-lg-4">
+          <p>山西备案编号110105014669</p>
+          <p>© 2014-2015 Jiarihunli.com 版权所有</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript"> 
+  $(function() {
+    $('.swiper-container').height(document.documentElement.clientHeight);
+  }) 
+
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
-    direction: 'vertical',
     loop: true,
     
     // If we need pagination
     pagination: '.swiper-pagination',
+    paginationClickable: true,
     
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    
     // And if we need scrollbar
     //scrollbar: '.swiper-scrollbar',
+    onSlideChangeEnd: function (swiper) {
+      $(swiper.slides[swiper.activeIndex])
+        .find('.row div span')
+        .each(function(index, item){
+          $(item)
+            .addClass('animated ' + $(this).data('animationName'))
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("animated " + $(this).data('animationName'));
+            });
+        })
+        
+    }
   })
+    // .on('onInit', function(swiper){
+    //   $(swiper.slides[swiper.activeIndex])
+    //     .find('.row div')
+    //     .addClass('animated bounceInLeft')
+    //     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    //       $(this).removeClass('bounceInLeft');
+    //     });
+    // })
+    // .on('slideChangeEnd', );
+
+
+  
 </script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>
 </body>
 </html>

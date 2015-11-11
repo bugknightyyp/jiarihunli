@@ -1,15 +1,121 @@
 body{
   font-family: "microsoft yahei";
+  color: #333;
+}
+
+.no-wrap{
+  white-space:nowrap;   
 }
 
 /********************
   nav
 *******************/
-
+.header-nav{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #0275d8;
+}
+.header-nav a{
+  color: #fff;
+}
+.navbar-toggler{
+  color: #fff;
+}
+.navbar-brand img{
+  width: 50px;
+}
+/*swiper*/
 .swiper-container{
   height:500px;
+  cursor: url(/stuff/grab.png) 8 8, move;
 }
 
+.swiper-wrapper .container{
+  position: relative;
+  height: 100%;
+  color: #fff;
+}
+.swiper-wrapper .container .row{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.swiper-wrapper .container .row div{
+  padding:0 0 30px 0;
+  text-shadow:5px 5px 5px rgba(100, 100, 100, 0.5);
+}
+
+/*经典案例*/
+.cases{
+  background-color: #EEEEF2;
+  box-shadow: 0 0 2px 2px rgba(100, 100, 100, 0.1) inset;
+  padding: 100px 0;
+}
+.cases h4{
+  padding: 0 0 20px;
+}
+.cases h4 a{
+  font-size: 1rem;
+  padding-top: 5px;
+}
+.cases .media {
+  display: block;
+  background: #fff;
+  border-bottom: solid 1px #c7c9c8;
+  margin-bottom: 15px;
+}
+
+.cases .img-wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.cases .img-overlay {
+    background: #323C46;
+    background: rgba(0,0,0, 0.4);
+    filter: alpha(opacity=70);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 4;
+    display: none;
+}
+.cases  .img-wrap img {
+  transition: all 1s ease-out;
+}
+.cases  .img-overlay span {
+  position: relative;
+  margin-top: 40%;
+}
+
+.cases .media:hover .img-overlay{
+  display: block;
+}
+
+.cases .media:hover  .img-wrap img{
+  transform: scale(1.2, 1.2);
+}
+
+.cases .media-body h5{
+  padding: 15px 0 10px 0;
+  color: #333;
+}
+.cases .media-body p{
+  color: #999;
+}
+
+.page-footer{
+  padding: 100px 0;
+}
+.jiathis{
+  overflow: hidden;
+  padding: 20px 0;
+}
 /*34 * 16 = 554*/
 @media (min-width: 34em) {
 }
@@ -20,12 +126,29 @@ body{
 /*62 * 16 = 992*/
 @media (min-width: 62em) {
   /***nav***/
+  .header-nav{
+    padding-top: 60px;
+    background-color: transparent;
+    position: absolute;
+  }
+  .navbar-brand img{
+    width: 120px;
+  }
   nav .nav{
     display: block;
   }
   nav .nav li{
     display: inline-block;
     padding: 0 15px;
+  }
+
+  .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .swiper-wrapper .container{
+    font-size: 30px;
   }
 }
 /*75 * 16 = 1200*/
